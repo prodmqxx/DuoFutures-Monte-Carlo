@@ -1,0 +1,6 @@
+Quick Start
+
+Calibrate from ~5 years of history, 10k paths, 1-year horizon, 50/50 portfolio, E-mini multipliers:
+
+python mc_two_asset_futures.py --hist_years 5 --paths 10000 \
+  --w_nq 0.5 --w_es 0.5 --contracts_nq 1 --contracts_es 1 --mult_nq 20 --mult_es 50
