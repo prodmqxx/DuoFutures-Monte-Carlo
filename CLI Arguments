@@ -1,0 +1,16 @@
+| Flag                               | Meaning                                         | Default         |
+| ---------------------------------- | ----------------------------------------------- | --------------- |
+| `--hist_years`                     | Years of history for calibration                | `5`             |
+| `--years`                          | Simulation horizon in years                     | `1.0`           |
+| `--steps`                          | Steps over horizon (trading days)               | `252`           |
+| `--paths`                          | Number of Monte Carlo paths                     | `10000`         |
+| `--rf`                             | Risk-free rate for Sharpe                       | `0.02`          |
+| `--seed`                           | RNG seed (reproducible)                         | `7`             |
+| `--w_nq`, `--w_es`                 | Portfolio weights (sum not enforced)            | `0.5`, `0.5`    |
+| `--no_calibrate`                   | Use manual params instead of Yahoo              | off             |
+| `--mu_nq`, `--sigma_nq`            | Manual μ/σ for NQ                               | `0.10`, `0.30`  |
+| `--mu_es`, `--sigma_es`            | Manual μ/σ for ES                               | `0.07`, `0.20`  |
+| `--rho`                            | Manual correlation (if `--no_calibrate`)        | `0.85`          |
+| `--contracts_nq`, `--contracts_es` | Contract counts (can be fractional)             | `1.0`, `1.0`    |
+| `--mult_nq`, `--mult_es`           | $/point multipliers (E-mini: 20/50, Micro: 2/5) | `20`, `50`      |
+| `--outdir`                         | Output folder                                   | `outputs_nq_es` |
