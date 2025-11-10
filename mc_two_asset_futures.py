@@ -7,6 +7,8 @@ Two-asset Monte Carlo (GBM) for NQ & ES futures with:
 - Futures P&L in dollars (contract multipliers)
 - Charts, CSV exports, and Excel bundle
 
+- Author : Maxim Konovalov
+
 Examples:
   python mc_two_asset_futures.py --hist_years 5 --paths 10000 --w_nq 0.5 --w_es 0.5
   python mc_two_asset_futures.py --no_calibrate --mu_nq 0.10 --sigma_nq 0.30 --mu_es 0.07 --sigma_es 0.20 --rho 0.85
@@ -370,3 +372,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
